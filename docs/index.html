@@ -13,47 +13,106 @@
 
         body {
             background-color: #000000;
-            font-family: source sans pro, Helvetica, sans-serif;
+            color: #f5f5f5;
+            font-family: Arial, Helvetica, sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            color: #ffffff;
         }
 
-        .container {
+        .page {
+            width: 100%;
+            max-width: 900px;
+            padding: 40px 20px 60px;
+            text-align: left;
+        }
+
+        .logo-wrapper {
             text-align: center;
-            padding: 40px;
-        }
-
-        .logo {
-            max-width: 400px;
-            width: 90%;
-            height: auto;
             margin-bottom: 40px;
         }
 
-        h1 {
-            font-size: 2.5rem;
-            font-weight: 400;
-            letter-spacing: 0.05em;
-            color: #ffffff;
+        .logo-wrapper img {
+            max-width: 260px;
+            height: auto;
         }
 
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 1.8rem;
+        h1 {
+            font-size: 2.93rem;
+            font-weight: 500;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .tagline {
+            text-align: center;
+            font-size: 1.40rem;
+            color: #cccccc;
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            font-size: 1.1rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: #bbbbbb;
+            margin: 32px 0 12px;
+        }
+
+        p {
+            line-height: 1.6;
+            font-size: 0.98rem;
+            color: #e0e0e0;
+        }
+
+        ul {
+            margin-left: 1.2rem;
+            margin-top: 0.3rem;
+        }
+
+        li {
+            margin-bottom: 0.35rem;
+            line-height: 1.5;
+        }
+
+        .contact {
+            margin-top: 36px;
+            font-size: 0.95rem;
+            color: #cccccc;
+        }
+
+        .contact a {
+            color: #f5f5f5;
+            text-decoration: none;
+            border-bottom: 1px solid #666666;
+        }
+
+        .contact a:hover {
+            border-bottom-color: #ffffff;
+        }
+
+        @media (max-width: 600px) {
+            .page {
+                padding: 30px 16px 40px;
             }
 
-            .logo {
-                max-width: 300px;
+            h1 {
+                font-size: 1.6rem;
+            }
+
+            .tagline {
+                font-size: 0.95rem;
             }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <img src="velridge-logo.png" alt="Velridge Advisory Logo" class="logo">
+    <div class="page">
+        <h1>Velridge Advisory</h1>
+        <p class="tagline">GTM and Partner Strategy for ISVs</p>
     </div>
 </body>
 </html>
